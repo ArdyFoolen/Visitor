@@ -16,5 +16,13 @@ namespace GenericAcyclicVisitorDomain
         {
             Console.WriteLine($"{car.GetType().Name} name: {car.Name}");
         }
+        public void Visit(Bmw car)
+        {
+            Console.WriteLine($"{car.GetType().Name} name: {car.Name}");
+        }
+        public void Visit(Toyota car)
+        {
+            Console.WriteLine($"{car.GetType().Name} name: {car.Name}");
+        }
     }
 }

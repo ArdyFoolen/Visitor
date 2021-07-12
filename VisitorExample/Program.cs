@@ -40,6 +40,10 @@ namespace VisitorExample
             Bmw bmw = new Bmw("4");
             bmw.Accept(carVisitor);
 
+            carVisitor = new CarVisitor<Mercedes>() as CarVisitor;
+            Mercedes mercedes = new Mercedes("default");
+            mercedes.Accept(carVisitor);
+
             Console.WriteLine("=======================");
             Console.WriteLine("Full Visitor pattern");
             List<FullDomain.Fruit> fruits = new List<FullDomain.Fruit>()
